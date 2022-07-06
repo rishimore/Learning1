@@ -1,0 +1,7 @@
+<aura:component >
+     <aura:registerEvent name="cmpEvent" type="c:JuneEvent"/> 
+    
+	 <lightning:button variant="brand-outline" label="Stone" title="Brand action" onclick="{! c.handleClick }" />
+     <lightning:button variant="brand-outline" label="Paper" title="Brand action" onclick="{! c.handleClick }" />
+     <lightning:button variant="brand-outline" label="Scissor" title="Brand action" onclick="{! c.handleClick }" />
+</aura:component>

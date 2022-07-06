@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="fieldsList" type="String[]"
+                    default="['FirstName', 'LastName', 'Email', 'Phone']"/>
+    <lightning:recordForm
+                          recordId="{!v.recordId}"
+                          objectApiName="Contact"
+                          layoutType="Full"
+                          column="2"
+                          mode="view" />
+</aura:component>

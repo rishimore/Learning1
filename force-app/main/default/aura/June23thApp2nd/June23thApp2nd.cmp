@@ -1,0 +1,23 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" 
+                controller = "June23thClass">
+    
+    <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+        <div class="slds-size_1-of-2 slds-p-right_xx-small">
+            <lightning:input aura:id="fname" name="input1" label="Enter your first number" placeholder="type here..."/>
+        </div>
+        <div class="slds-size_1-of-2">
+            <lightning:input aura:id="lname" name="input2" label="Enter your second number" placeholder="type here..."/>
+        </div>
+        
+        <div class="slds-size_1-of-2 slds-p-right_xx-small">
+            <lightning:input aura:id="email" type="email" name="email" placeholder="youraddress@company.com" label="Enter your email address" />
+        </div>
+        <div class="slds-size_1-of-2">
+            <lightning:input aura:id="phone" type="tel" label="Enter your phone" name="phone" placeholder="areacode-phone"/>
+        </div>
+        
+        <div class="slds-align_absolute-center" style="height:5rem">
+            <lightning:button variant="brand" label="Submit" title="Brand action" onclick="{! c.handleClick }" />
+        </div>
+    </div>
+</aura:component>

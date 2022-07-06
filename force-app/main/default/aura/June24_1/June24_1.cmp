@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute name="childVar" type="String"/>
+	 <lightning:button variant="brand-outline" label="{!v.childVar}" title="Brand action" onclick="{! c.handleClick }" />
+     <lightning:button variant="brand-outline" label="{!v.childVar}" title="Brand action" onclick="{! c.handleClick }" />
+     <lightning:button variant="brand-outline" label="{!v.childVar}" title="Brand action" onclick="{! c.handleClick }" />
+    <br/>
+	{!v.childVar}
+</aura:component>
