@@ -5,9 +5,17 @@ export default class July6LWC extends LightningElement {
     secondNumber = 0;
     result = 0;
 
-    handleClick(){
+    handleClick(event){
       //  alert('here');
-      this.result = this.firstNumber + this.secondNumber;
+      if(event.target.label == 'Addition'){
+        this.result = this.firstNumber + this.secondNumber;
+      }
+      else if(event.target.label == 'Substraction'){
+        this.result = this.firstNumber - this.secondNumber;
+      }
+      else{
+        this.result = this.firstNumber * this.secondNumber;
+      }
       //alert(sum);
     }
 
