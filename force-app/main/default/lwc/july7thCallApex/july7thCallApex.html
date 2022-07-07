@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Contact Records" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={rishikeshVar.data} for:item="contact">
+                <li key={contact.Id}>
+                    {contact.Name}, {contact.Email}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>

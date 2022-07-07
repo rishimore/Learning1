@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Opportunity Records" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={opportunityVar.data} for:item="opportunity">
+                <li key={opportunity.Id}>
+                    {opportunity.Name}, {opportunity.Amount}, {opportunity.Type}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
