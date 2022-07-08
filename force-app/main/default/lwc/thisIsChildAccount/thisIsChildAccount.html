@@ -1,0 +1,29 @@
+<template>
+  <!--  My Name Is : {name}
+    <ul class="slds-m-around_medium">
+        <template for:each={accountVar.data} for:item="account">
+            <li key={account.Id}>
+                {account.Name},{account.Type},{account.Active__c}
+            </li>
+        </template>
+    </ul>-->
+    <lightning-card title="Active Records" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={activeAccounts} for:item="accActive">
+                <li key={accActive.Id}>
+                    {accActive.Name}, {accActive.Type},{accActive.Active__c}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+
+    <lightning-card title="Inactive Records" icon-name="custom:custom14">
+        <ul class="slds-m-around_medium">
+            <template for:each={inActiveAccounts} for:item="inAccActive">
+                <li key={accActive.Id}>
+                    {inAccActive.Name}, {inAccActive.Type},{inAccActive.Active__c}
+                </li>
+            </template>
+        </ul>
+    </lightning-card>
+</template>
