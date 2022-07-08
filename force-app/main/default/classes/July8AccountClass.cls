@@ -13,4 +13,11 @@ public with sharing class July8AccountClass {
         getAccInAct = [SELECT Id, Name, Type, Active__c FROM Account Where Active__c = 'No']; 
         return getAccInAct;
     }
+
+    @AuraEnabled(cacheable=true)
+    public static List<Account> getAllAcc(){
+        List<Account> getAllAccount = new List<Account>();
+        getAllAccount = [SELECT Id, Name FROM Account LIMIT 10]; 
+        return getAllAccount;
+    }
 }

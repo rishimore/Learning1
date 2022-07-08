@@ -22,12 +22,12 @@ export default class ThisIsChildAccount extends LightningElement {
     
     @api methodTobeCalledFromParentInactiveAccount(){
         getAccInActive()
-        .then(result => {
-            this.inActiveAccounts = result;
-        })
-        .catch(error => {
-            this.error = error;
-        });
+            .then(result => {
+                this.inActiveAccounts = result;
+            })
+            .catch(error => {
+                this.error = error;
+            });
     }
  //   @wire(methodName) accountVar;
 }
