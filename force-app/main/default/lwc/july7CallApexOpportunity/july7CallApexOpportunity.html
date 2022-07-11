@@ -1,5 +1,5 @@
 <template>
-    <lightning-card title="Opportunity Records" icon-name="custom:custom14">
+  <!--  <lightning-card title="Opportunity Records" icon-name="custom:custom14">
         <ul class="slds-m-around_medium">
             <template for:each={opportunityVar.data} for:item="opportunity">
                 <li key={opportunity.Id}>
@@ -7,5 +7,13 @@
                 </li>
             </template>
         </ul>
-    </lightning-card>
+    </lightning-card>-->
+    <lightning-record-form
+    record-id={recordId}
+    object-api-name={objectApiName}
+    fields={fields}
+    columns="2"
+    mode="edit"
+    onsubmit={handleSubmit}>
+    </lightning-record-form>
 </template>

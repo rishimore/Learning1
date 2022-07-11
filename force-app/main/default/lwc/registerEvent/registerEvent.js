@@ -1,4 +1,3 @@
-
 import { LightningElement,api,wire } from 'lwc';
 import pubsub from 'c/pubsub' ;
 import { CurrentPageReference } from 'lightning/navigation';
