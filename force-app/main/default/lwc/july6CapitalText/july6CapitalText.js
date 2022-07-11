@@ -10,9 +10,10 @@ export default class July6CapitalText extends LightningElement {
     }
 
     captureName(event){
+        
         if(event.target.name == 'inputName'){
             this.name = event.target.value;
         }
-    //     alert(event.target.value);
+        //alert(event.target.value);
     }
 }
